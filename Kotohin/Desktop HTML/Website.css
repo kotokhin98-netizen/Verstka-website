@@ -1,3 +1,10 @@
+:root{
+  --color-yelowe:#F8F200;
+  --color-black :#000000;
+  --Color-blu:#52BEDC;
+}
+
+
 @font-face {
   font-family: 'Roboto';
   src: url('../FONTS/Roboto-Regular_1.woff') format('woff');
@@ -13,36 +20,47 @@
   font-style: sans-serif;
 }
 
-header{
-background-image: url("../IMAGES/background.png");
-display: flex;
+body{
 width: 1920px; 
-margin: 0 auto; 
+height: 4334px;
+
+}
+
+header{
+
+  display: flex;
+  width:1280px;
+  height: 74px;
+  justify-content:center;
+  align-items: center; 
+  gap: 605px;
+  margin: 20px 320px 906px 320px; 
 }
 .media{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-
+  padding: 0px;
+  display: flex;
+  width: 379px; 
+  height: 30px;
+  gap: 40px; 
+  
 }
 
-.flexbox{
-    display: flex;
-    margin: auto;
-    gap: 605px;
-    padding-top:20px; ;
-    padding-left:320px ;
-    padding-right: 320px;
-    padding-bottom: 906px;
+.logo{
+  width: 296;
+  height: 74px; 
+  
 }
 
-.group-in-header{
-    display: flex;
-    left: 80px;
-    align-self: flex-end;
-    padding-top:31px; ;
-    padding-left:32px ;
-    padding-right: 97px;
-    padding-bottom:0px  ; 
+.group_1{
+  display: flex;
+  
+  
+}
 
+.background{
+  
+}
+
+.group_banner{
+  display: flex;
 }
