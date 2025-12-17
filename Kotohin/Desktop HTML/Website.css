@@ -172,6 +172,9 @@ margin: 0px 282px 70px 70px;
   background-image: url(../IMAGES\22 1.png);
   
 }
+
+
+
 .group_3{
 width: 1920px;
 height: 884px; ;
@@ -326,4 +329,43 @@ background-color: #000000;
   gap: 32px;
   margin: 25px 0px 70px 320px;
 
+}
+.registation_end{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+/* Страница  4 */
+
+.bridge2{
+  width: 1920px;
+  height: 70px;
+  background-image: url(../IMAGES\22 2.png);
+}
+
+.group_4{
+  width:1920px ;
+  height: 676px;
+  background-color: #F8F200;
+}
+
+.group_img_in_group4{
+  display: flex
+  width:624px ;
+  height:536px;
+  row-gap:26px
+}
+
+.screen{
+  width: 624px;
+  height: 430px;
+}
+
+.logo_group_in_group4{
+  display: flex;
+  width:540px;
+  height: 80px;
+  gap: 25px;
 }
