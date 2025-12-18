@@ -346,16 +346,19 @@ background-color: #000000;
 }
 
 .group_4{
+  display: flex;
+  flex-flow: column wrap;
   width:1920px ;
   height: 676px;
   background-color: #F8F200;
 }
 
 .group_img_in_group4{
-  display: flex
+  display: flex;
+  flex-flow: column;
   width:624px ;
   height:536px;
-  row-gap:26px
+  row-gap:26px;
 }
 
 .screen{
@@ -368,4 +371,68 @@ background-color: #000000;
   width:540px;
   height: 80px;
   gap: 25px;
+  margin: 26px 42px 70px 42px;
+}
+
+.img_cross{
+  width: 90px ;
+  height: 90px; 
+}
+
+.group_1_in_group4{
+  display: flex;
+  flex-direction: column;
+  width: 624px ;
+  height: 526px;
+}
+
+.text1_in_group1{
+  display: flex;
+  font-size: 62px;
+  width: 560px;
+  height: 237px;
+}
+
+.text2_in_group1{
+  display: flex;
+  font-size: 18px;
+  width: 624px;
+  height: 125px;
+}
+
+.text_group1{
+  display: flex;
+  row-gap: 15px;
+  width: 390px;
+  height: 126px;
+
+}
+
+.group1_text_group1{
+  width: 264px;
+  height: 32px;
+}
+
+
+.group2_text_group1{
+  width: 350px;
+  height:32px ;
+}
+
+
+.group3_text_group1{
+  width:390px ;
+  height: 32px;
+}
+.text1_in_group1_text{
+  width:221px ;
+  height: 21px;
+}
+.text2_in_group1_text{
+  width:308px ;
+  height: 21px;
+}
+.text3_in_group1_text{
+  width: 348px;
+  height: 21px;
 }
