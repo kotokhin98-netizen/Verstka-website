@@ -385,7 +385,6 @@ background-color: #000000;
 .group_1_in_group4{
   display: flex;
   flex-direction: column;
-  
   width: 624px ;
   height: 526px;
 }
@@ -442,3 +441,39 @@ background-color: #000000;
   width: 348px;
   height: 21px;
 }
+
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #F8F200;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 194px;
+  height: 59px;
+}
+
+
+.group_button {
+  margin: 25px 0;
+  width: 194px;
+  height: 59px; 
+}
+
+.text_in_button{
+  width: 94px;
+  height: 21px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ing_group_and_group1_in_group4{
+  display: flex;
+  gap: 32px;
+  margin: 70px 320px  70px 320px;
+}
+
