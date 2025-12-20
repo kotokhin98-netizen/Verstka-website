@@ -493,6 +493,15 @@ background-color: #000000;
   background-color: #000000;
 }
 
+.text_group_in_group1{
+  display: flex;
+  flex-flow: column;
+  width:466px;
+  height: 169px;
+  row-gap: 15px;
+  margin: 25px 158px 70px 0px;
+}
+
 .text_promo{
   display: flex;
   width: 224px;
@@ -507,7 +516,118 @@ color: white;
 font-size: 62px;
 width: 624px;
 height: 126px;
-}
-.general_group{
+margin: 70px 320px 25px 0px;
 
+}
+.general2_group{
+  display: flex;
+  flex-flow: column;
+  row-gap: 15px;
+  color:white;
+
+}
+.group1_in_text_group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width:286px;
+  height:32px;
+}
+.group2_in_text_group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 466px;
+  height: 32px;
+}
+.group3_in_text_group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 431px;
+  height: 32px;
+}
+
+.platforms{
+  
+  width: 319px;
+  height: 186.27px;
+}
+
+.choice_platform{
+  width: 255px;
+  height: 28.15px;
+  color: #52BEDC;
+  font-size: 24px;
+}
+.group_console{
+    display: flex;
+    flex-wrap: wrap;
+    width: 319px;
+    height: 133.27px;
+}
+
+.general1_group{
+  margin-left: 32px;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: auto; /* Убираем фиксированную высоту */
+  background-color: white; /* Добавляем черный фон как в макете */
+}
+
+.general_group_in_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 320px;
+  box-sizing: border-box;
+  height: auto; /* Убираем фиксированную высоту */
+}
+
+.img_group {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  height: 74px;
+}
+
+.text_group {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  height: 21px;
+}
+
+.end_foter {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 320px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  height: auto;
+  padding-bottom: 10px; /* Небольшой отступ снизу */
+  background-color: #000000;
+}
+
+/* Добавляем стили для ссылок в footer */
+.text_group a {
+  color:#000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.end_foter a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
 }
