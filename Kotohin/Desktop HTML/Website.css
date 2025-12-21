@@ -3,12 +3,33 @@
   --color-black :#000000;
   --Color-blu:#52BEDC;
  
-  --font-family-base:'Roboto';
+  
+  --font-family-base1:"BebasNeue-Regular";
+  --font-family-base2:"Roboto-Regular";
+  --font-family-base3:"Roboto-Bold";
+  --font-family-base4:"Roboto-Light"
+
+}
+
+@font-face {
+  font-family: 'Roboto-light';
+  src: url('../FONTS/static/Roboto-Light.woff');
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../FONTS/static/Roboto-Bold.woff');
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Regular';
   src: url('../FONTS/Roboto-Regular_1.woff');
   font-weight: 400;
   font-style: normal;
@@ -17,15 +38,17 @@
 
 
 @font-face {
-  font-family: 'Arial';
-  src: url('../FONTS/arialmt.woff');
+  font-family: 'BebasNeue';
+  src: url('../FONTS/static/BebasNeue-Regular_1.woff');
   font-weight: 400;
   font-style: normal;
 }
 
 body{
-font-family:var(--font-family-base);
-font-family:var(--font-family-base);
+font-family:var(--font-family-base4);
+font-family:var(--font-family-base3);
+font-family:var(--font-family-base2);
+font-family:var(--font-family-base1);
 width: 1920px; 
 height: 4334px;
 
@@ -83,6 +106,7 @@ header{
 
 .text_logo_banner{
 display: flex;
+font-family: var(--font-family-base1);
 width: 484px;
 height: 126px;
 font-size: 55px;
@@ -100,12 +124,16 @@ margin: 0px 282px 70px 70px;
 }
 
 .font_button {
+  font-family: var(--font-family-base3);
   display: flex;
   align-items: center;
   color: #F8F200;
   font-size: 24px;
+ line-height: 40px;
 }
-
+.font_button:hover{
+  color: white;
+}
 
 
 
@@ -125,12 +153,18 @@ margin: 0px 282px 70px 70px;
 }
 
 .group2_text2_base{
-  line-height: 20px;
+  line-height: 34px;
+  font-family: var(--font-family-base2);
+  color: gray;
   display: flex;
   width: 952px;
   height: 125px;
   font-size: 18px;
 }
+.cyberpunk2077{
+  color: #52BEDC;
+}
+
 
 .text_in_group2{
   display: flex;
@@ -197,6 +231,8 @@ background-color: #000000;
 .text_base_in_group3{
   width: 952px;
   height: 91px;
+  font-family: var(--font-family-base2);
+  line-height: 34px;
   color: white;
   font-size: 18px;
   display: flex;
@@ -215,32 +251,38 @@ background-color: #000000;
   flex-flow: column;
   width: 460px;
   height: 383px;
-  row-gap: 35px;
   color: white;
+  
 }
 
 .name{
   width:460px ;
   height:35px ;
   border-bottom: 0.5px solid #C4C4C4;
+  row-gap: 13px;
+  margin-bottom: 35px;
 }
 
 .whats_your_name{
+  display: flex;
+  font-family: var(--font-family-base4);
+  font-size: 18px;
   width: 131px;
   height: 21px;
-
-  
-
+  padding-bottom: 13px;
 }
 
 .mail{
   width: 460px;
   height: 35px;
   border-bottom: 0.5px solid #C4C4C4;
+  padding-bottom: 35px;
   
 }
 
 .whats_your_mail{
+  font-size: 18px;
+  font-family: var(--font-family-base4);
   width: 93px;
   height: 21px;
   padding-bottom: 13px;
@@ -252,18 +294,19 @@ background-color: #000000;
   height: 120px;
   align-items: center;
   justify-content: center;
-  border:0.5px solid #C4C4C4;
+ border: 1px solid #777777;
 }
 
 .screenshot_button{
-  
-  width: 186px;
-  height: 42px;
+  display: flex;
+  flex-flow: column;
   gap: 7px;
 
 }
 
 .pint_screenshot{
+  font-size: 18px;
+  font-family: var(--font-family-base4);
   display: flex;
   align-items: center;
   width: 186px;
@@ -272,6 +315,8 @@ background-color: #000000;
 }
 
 .format{
+  font-family: var(--font-family-base4);
+  font-size: 12px;
   display: flex;
   align-items: center;
   width: 84px;
@@ -279,9 +324,10 @@ background-color: #000000;
 }
 
 .group_button{
-  row-gap: 15px;
+  row-gap: 35px;
   
 }
+
 
 .pint_screenshot{
   width: 186px;
@@ -330,9 +376,43 @@ background-color: #000000;
   margin: 25px 0px 70px 320px;
 
 }
+
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#F8F200;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 192px;
+  height: 59px;
+}
+
+
+.group_button1 {
+  margin: 35px 0px 15px ;
+  width: 194px;
+  height: 59px; 
+}
+
+.text_in_button1{
+  font-family: var(--font-family-base3);
+  font-size: 18px;
+  width: 92px;
+  height: 21px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text_in_button1:hover{
+  color: white;
+}
 .registation_end{
   display: flex;
-  gap: 10px;
+  width: 280px;
+  height: 14px;
 }
 
 
@@ -397,6 +477,8 @@ background-color: #000000;
 }
 
 .text2_in_group1{
+  line-height: 20px;
+  font-family: var(--font-family-base2);
   display: flex;
   font-size: 18px;
   width: 624px;
@@ -430,14 +512,20 @@ background-color: #000000;
   height: 32px;
 }
 .text1_in_group1_text{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
   width:221px ;
   height: 21px;
 }
 .text2_in_group1_text{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
   width:308px ;
   height: 21px;
 }
 .text3_in_group1_text{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
   width: 348px;
   height: 21px;
 }
@@ -464,6 +552,8 @@ background-color: #000000;
 }
 
 .text_in_button{
+  font-size:18px ;
+  font-family: var(--font-family-base3);
   width: 94px;
   height: 21px;
    display: flex;
@@ -499,10 +589,12 @@ background-color: #000000;
   width:466px;
   height: 169px;
   row-gap: 15px;
-  margin: 25px 158px 70px 0px;
+  margin: 25px 158px 0px 0px;
 }
 
 .text_promo{
+  font-size: 24px;
+  font-family: var(--font-family-base3);
   display: flex;
   width: 224px;
   height: 28xp;
@@ -527,6 +619,8 @@ margin: 70px 320px 25px 0px;
 
 }
 .group1_in_text_group{
+  font-size:18px ;
+  font-family:var(--font-family-base2);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -534,13 +628,18 @@ margin: 70px 320px 25px 0px;
   height:32px;
 }
 .group2_in_text_group{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
   display: flex;
   align-items: center;
   gap: 10px;
   width: 466px;
   height: 32px;
 }
+
 .group3_in_text_group{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -549,20 +648,26 @@ margin: 70px 320px 25px 0px;
 }
 
 .platforms{
-  
-  width: 319px;
-  height: 186.27px;
+  width:319 ;
+ height: 186.27px;
+ margin: 50px 147px 70.73px 0px;
 }
 
 .choice_platform{
+  font-size: 24px ;
+  font-family:var(--font-family-base3) ;
   width: 255px;
   height: 28.15px;
   color: #52BEDC;
   font-size: 24px;
+  
 }
 .group_console{
     display: flex;
+    align-items: flex-start;
+    gap: 79px;
     flex-wrap: wrap;
+    
     width: 319px;
     height: 133.27px;
 }
@@ -600,9 +705,22 @@ footer {
 }
 
 .text_group {
+  
   display: flex;
   gap: 32px;
   align-items: center;
+  height: 21px;
+}
+.text1{
+  font-size: 18px;
+  font-family: var(--font-family-base2);
+  width: 84px;
+  height: 21px;
+}
+.text2{
+  font-size:18px ;
+  font-family: var(--font-family-base2);
+  width: 272;
   height: 21px;
 }
 
